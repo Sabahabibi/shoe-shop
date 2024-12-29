@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../output.css" />
+    <title>login shoea</title>
+  </head>
+  <body>
+    <!-- back page btn -->
+    <button>
+      <img
+        class="pt-[21px] pl-[32px]"
+        src="../../assets/images/arrow-left-short.svg"
+        alt=""
+      />
+    </button>
+    <div class="flex flex-col items-center p-6 pt-20">
+      <!-- login page logo -->
+      <div class="flex flex-col items-center gap-[118px]">
+        <img
+          class="w-[54px] h-[81px]"
+          src="../../assets/images/logo.svg"
+          alt="logo-loginpage"
+        />
+        <h2
+          class="font-semibold text-[32px] text-[#152536] text-center pb-[40px]"
+        >
+          Login to Your Account
+        </h2>
+      </div>
+
+      <!-- input fields -->
+      <!-- email input -->
+      <div class="flex flex-col gap-[21px] w-full max-w-[380px]">
+        <div class="relative">
+          <img
+            class="absolute top-1/2 left-3 -translate-y-1/2 w-4 h-4"
+            src="../../assets/images/input-email-gray.svg"
+            alt="Email"
+          />
+          <input
+            class="pl-9 px-6 py-2 bg-[#FAFAFA] w-full max-w-[380px]"
+            type="email"
+            placeholder="Email"
+          />
+        </div>
+        <!-- password input -->
+        <div class="relative w-full max-w-[380px]">
+          <img
+            class="absolute top-1/2 left-3 -translate-y-1/2 w-4 h-4"
+            src="../../assets/images/input-password-gray.svg"
+            alt="password"
+          />
+          <input
+            class="pl-9 px-6 py-2 bg-[#FAFAFA] w-full max-w-[380px]"
+            type="password"
+            placeholder="Password"
+          />
+          <!-- preview password icone -->
+          <img
+            class="absolute top-1/2 right-3 -translate-y-1/2 w-4 h-4"
+            src="../../assets/images/eye-preview-gray.svg"
+            alt="preview-password"
+          />
+        </div>
+      </div>
+
+      <!-- remember me -->
+      <div class="flex items-center gap-2 pt-[40px]">
+        <input type="checkbox" name="remember" value="remember" id="remember" />
+        <label for="remember" class="text-[#212529]">Remember me</label>
+      </div>
+
+      <button
+        class="w-[380px] h-[47px] m-[255px] bg-[#212529] text-white rounded-[30px] border border-[#212529] opacity-65 px-[16px] py-[12px] gap-[8px] text-[14px] font-medium leading-[21px]"
+      >
+        Sign In
+      </button>
+    </div>
+  </body>
+</html>
