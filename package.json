@@ -4,5 +4,8 @@
   },
   "scripts": {
     "start": "npx tailwindcss -i ./src/style/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "swiper": "^11.1.15"
   }
 }
