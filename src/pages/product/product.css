@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* استایل برای نقاط pagination */
+.swiper-pagination-bullet {
+  background-color: #b0b0b0 !important; /* رنگ طوسی برای نقاط */
+  width: 10px !important; /* عرض پیش‌فرض نقاط */
+  height: 10px !important; /* ارتفاع پیش‌فرض نقاط */
+  border-radius: 50% !important; /* گرد کردن نقاط */
+  transition: background-color 0.3s, width 0.3s !important; /* انیمیشن برای تغییر رنگ و اندازه */
+}
+
+/* زمانی که نقطه فعال است (روی اسلاید فعال) */
+.swiper-pagination-bullet-active {
+  background-color: #000000 !important; /* رنگ مشکی برای نقطه فعال */
+  width: 16px !important; /* کشیده‌تر کردن نقطه فعال */
+  height: 16px !important; /* کشیده‌تر کردن نقطه فعال */
+}
+
+.icon {
+  @apply absolute top-4 left-4; /* فاصله از بالا و چپ */
+  z-index: 10;
+}
+
+/* پنهان کردن اسکرول‌بار */
+.hide-scrollbar {
+  scrollbar-width: none; /* برای فایرفاکس */
+  -ms-overflow-style: none; /* برای اینترنت اکسپلورر */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* برای مرورگرهای وب‌کیت */
+}
+
+/* جلوگیری از کوچک شدن دکمه‌ها در حین اسکرول */
+.flex button {
+  flex-shrink: 0;
+}
