@@ -1,0 +1,38 @@
+.radio-btn {
+  width: 60px;
+  height: 60px;
+  background-color: gray;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.radio-btn.selected {
+  background-color: black;
+}
+
+.default-btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.default-btn:hover {
+  background-color: #d1d5db; /* Slightly darker gray */
+  color: black;
+}
+
+.default-btn.active {
+  background-color: black;
+  color: white;
+}
+
+/* Interactions */
+.default-btn,
+.radio-btn {
+  cursor: pointer;
+}
+
+.default-btn.active .radio-btn.selected {
+  transform: scale(1.2);
+}
