@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../output.css" />
+    <title>search</title>
+  </head>
+  <body class="px-6 py-7">
+    <!-- search bar -->
+    <div class="relative w-full max-w-[500px]">
+      <img
+        class="absolute top-1/2 left-6 -translate-y-1/2 w-4 h-4"
+        src="../../assets/images/icones/search-black.svg"
+        alt="search"
+      />
+      <input
+        class="pl-12 pr-12 bg-[#FAFAFA] w-full h-[55px] rounded-2xl text-black border border-transparent focus:border-black focus:outline-none"
+        type="text"
+        placeholder="Search"
+      />
+      <!-- نمیدونم اسم ایکون چیه باید تغییرش بدم -->
+      <img
+        class="absolute top-1/2 right-6 -translate-y-1/2 w-4 h-4"
+        src="../../assets/images/icones/eye-preview-gray.svg"
+        alt="preview-password"
+      />
+    </div>
+
+    <!-- recent & clear all section -->
+    <!-- <div class="flex justify-between items-center py-7">
+      <p class="font-semibold color-[#152536] text-xl leading-[24.2px]">
+        Recent
+      </p>
+      <p class="font-semibold color-[#152536] text-lg leading-[24.2px]">
+        Clear All
+      </p>
+    </div> -->
+    <!-- recent & clear all section -->
+    <div class="flex justify-between items-center py-7">
+      <p class="font-semibold color-[#152536] text-xl leading-[24.2px]">
+        Results for "<span>Abcdefghijk</span>"
+      </p>
+      <p class="font-semibold color-[#152536] text-lg leading-[24.2px]">
+        0 <span>found</span>
+      </p>
+    </div>
+    <!-- gray border -->
+    <!-- <div class="border text-[#fdfdfd]"></div> -->
+
+    <!-- اگه ریسنت داشتیم اینو نشون بده -->
+    <!-- recent search list section -->
+    <!-- <div class="flex justify-between items-center py-6">
+
+      <p class="text-gray-500 text-lg">Nike Warpshot Classic</p>
+      <button
+        class="border border-gray-600 text-gray-600 rounded-[9px] w-[25px] h-[25px] flex items-center justify-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="17"
+          height="17"
+          fill="currentColor"
+          class="bi bi-x"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+          />
+        </svg>
+      </button>
+    </div> -->
+
+    <!-- وقتی چیزی نشون نداد این صفحه -->
+    <!-- not found search section -->
+    <!-- <div class="py-7 flex flex-col items-center text-center">
+      <img
+        class="px-6 pb-4"
+        src="../../assets/images/shadow/Doc.png"
+        alt="not found"
+      />
+      <div class="flex flex-col gap-3">
+        <p class="font-bold text-2xl text-[#101c29]">Not Found</p>
+        <p class="text-lg text-[#152435]">
+          Sorry, the keyword you entered cannot be found, please check again or
+          search with another keyword.
+        </p>
+      </div>
+    </div> -->
+
+    <!-- اگه ریزالت داشت این لیست نشون میده -->
+    <!-- result of search list -->
+
+    <div class="grid grid-cols-2 gap-4">
+      <!-- card -->
+      <div class="flex flex-col items-center">
+        <!-- product image -->
+        <div
+          class="bg-[#F3F3F3] w-[182px] h-[182px] rounded-[24px] flex items-center justify-center relative"
+        >
+          <img
+            class="w-[182px] h-[182px] p-[20px] object-contain"
+            src="../../assets/images/products/product.svg"
+            alt="product"
+          />
+          <!-- SVG to overlay on top of the image -->
+          <img
+            class="absolute top-3 right-3 w-6"
+            src="../../assets/images/icones/heart-search.svg"
+            alt=""
+          />
+        </div>
+
+        <!-- product name & price  -->
+        <div class="flex flex-col gap-2 pt-4">
+          <p
+            class="font-bold text-[20px] leading-[24.2px] tracking-[-0.04em] text-[#152536]"
+          >
+            K-swiss ista TRainer
+          </p>
+          <div class="flex gap-4 items-center">
+            <!-- rating section -->
+            <div class="flex items-center gap-1">
+              <svg
+                fill="#181616"
+                width="30px"
+                height="30px"
+                viewBox="-17.16 -17.16 86.32 86.32"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#181616"
+                stroke-width="0.0005200000000000001"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="#b2aeae"
+                  stroke-width="0.10400000000000001"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M27.4133467,3.10133815 L32.0133467,18.1013381 C32.2133467,18.7013381 32.8133467,19.0013381 33.4133467,19.0013381 L48.4133467,19.0013381 C49.9133467,19.0013381 50.5133467,21.0013381 49.3133467,21.9013381 L37.1133467,30.9013381 C36.6133467,31.3013381 36.4133467,32.0013381 36.6133467,32.6013381 L42.4133467,48.0013381 C42.8133467,49.4013381 41.3133467,50.6013381 40.1133467,49.7013381 L27.0133467,39.9013381 C26.5133467,39.5013381 25.8133467,39.5013381 25.2133467,39.9013381 L12.0133467,49.7013381 C10.8133467,50.6013381 9.21334668,49.4013381 9.71334668,48.0013381 L15.3133467,32.6013381 C15.5133467,32.0013381 15.3133467,31.3013381 14.8133467,30.9013381 L2.61334668,21.9013381 C1.41334668,21.0013381 2.11334668,19.0013381 3.51334668,19.0013381 L18.5133467,19.0013381 C19.2133467,19.0013381 19.7133467,18.8013381 19.9133467,18.1013381 L24.6133467,3.00133815 C25.0133467,1.60133815 27.0133467,1.70133815 27.4133467,3.10133815 Z M26.0133467,12.8023264 C26,14.1700393 26,33.5426636 26,34.4953918 C26.1865845,34.6476135 28.9331193,36.6890643 34.2396046,40.6197441 C34.9394191,41.144605 35.8141872,40.4447905 35.5809157,39.6283403 L35.5809157,39.6283403 L32.3085327,31.0201416 C31.9597778,30.2501831 32.3085327,29.7487793 32.7398682,29.4849854 L32.7398682,29.4849854 L39.6048489,24.6961622 C40.3046634,24.1713013 39.9547562,23.0049438 39.0799881,23.0049438 L39.0799881,23.0049438 L31.0206299,23.0049438 C30.6707226,23.0049438 29.7518921,22.8880615 29.5025635,21.9888306 L29.5025635,21.9888306 L26.8332347,13.4436151 C26.7175852,13.0388421 26.3602784,12.8204102 26.0133467,12.8023264 Z"
+                  ></path>
+                </g>
+              </svg>
+              <p class="text-[#697279] text-sm">4.5</p>
+            </div>
+            <p>|</p>
+            <p
+              class="bg-[#F3F3F3] text-[#212529] rounded-xl px-3 py-1 text-center text-sm font-medium"
+            >
+              5.371 sold
+            </p>
+          </div>
+
+          <p class="font-bold text-[18px] leading-[19.36px] text-[#152536]">
+            <span>$</span> 85.00
+          </p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="flex flex-col items-center">
+        <!-- product image -->
+        <div
+          class="bg-[#F3F3F3] w-[182px] h-[182px] rounded-[24px] flex items-center justify-center relative"
+        >
+          <img
+            class="w-[182px] h-[182px] p-[20px] object-contain"
+            src="../../assets/images/products/product.svg"
+            alt="product"
+          />
+          <!-- SVG to overlay on top of the image -->
+          <img
+            class="absolute top-3 right-3 w-6"
+            src="../../assets/images/icones/heart-search.svg"
+            alt=""
+          />
+        </div>
+
+        <!-- product name & price  -->
+        <div class="flex flex-col gap-2 pt-4">
+          <p
+            class="font-bold text-[20px] leading-[24.2px] tracking-[-0.04em] text-[#152536]"
+          >
+            K-swiss ista TRainer
+          </p>
+          <div class="flex gap-4 items-center">
+            <!-- rating section -->
+            <div class="flex items-center gap-1">
+              <svg
+                fill="#181616"
+                width="30px"
+                height="30px"
+                viewBox="-17.16 -17.16 86.32 86.32"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#181616"
+                stroke-width="0.0005200000000000001"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="#b2aeae"
+                  stroke-width="0.10400000000000001"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M27.4133467,3.10133815 L32.0133467,18.1013381 C32.2133467,18.7013381 32.8133467,19.0013381 33.4133467,19.0013381 L48.4133467,19.0013381 C49.9133467,19.0013381 50.5133467,21.0013381 49.3133467,21.9013381 L37.1133467,30.9013381 C36.6133467,31.3013381 36.4133467,32.0013381 36.6133467,32.6013381 L42.4133467,48.0013381 C42.8133467,49.4013381 41.3133467,50.6013381 40.1133467,49.7013381 L27.0133467,39.9013381 C26.5133467,39.5013381 25.8133467,39.5013381 25.2133467,39.9013381 L12.0133467,49.7013381 C10.8133467,50.6013381 9.21334668,49.4013381 9.71334668,48.0013381 L15.3133467,32.6013381 C15.5133467,32.0013381 15.3133467,31.3013381 14.8133467,30.9013381 L2.61334668,21.9013381 C1.41334668,21.0013381 2.11334668,19.0013381 3.51334668,19.0013381 L18.5133467,19.0013381 C19.2133467,19.0013381 19.7133467,18.8013381 19.9133467,18.1013381 L24.6133467,3.00133815 C25.0133467,1.60133815 27.0133467,1.70133815 27.4133467,3.10133815 Z M26.0133467,12.8023264 C26,14.1700393 26,33.5426636 26,34.4953918 C26.1865845,34.6476135 28.9331193,36.6890643 34.2396046,40.6197441 C34.9394191,41.144605 35.8141872,40.4447905 35.5809157,39.6283403 L35.5809157,39.6283403 L32.3085327,31.0201416 C31.9597778,30.2501831 32.3085327,29.7487793 32.7398682,29.4849854 L32.7398682,29.4849854 L39.6048489,24.6961622 C40.3046634,24.1713013 39.9547562,23.0049438 39.0799881,23.0049438 L39.0799881,23.0049438 L31.0206299,23.0049438 C30.6707226,23.0049438 29.7518921,22.8880615 29.5025635,21.9888306 L29.5025635,21.9888306 L26.8332347,13.4436151 C26.7175852,13.0388421 26.3602784,12.8204102 26.0133467,12.8023264 Z"
+                  ></path>
+                </g>
+              </svg>
+              <p class="text-[#697279] text-sm">4.5</p>
+            </div>
+            <p>|</p>
+            <p
+              class="bg-[#F3F3F3] text-[#212529] rounded-xl px-3 py-1 text-center text-sm font-medium"
+            >
+              5.371 sold
+            </p>git
+          </div>
+
+          <p class="font-bold text-[18px] leading-[19.36px] text-[#152536]">
+            <span>$</span> 85.00
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
