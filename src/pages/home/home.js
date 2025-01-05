@@ -1,46 +1,41 @@
+import { getProductsList } from "../../services/products.js";
 const container = document.getElementById("productCard");
 const products = document.getElementById("products");
+const NikeProducts = document.getElementById("NikeProducts");
+const allProducts = document.getElementById("allProducts");
+const brandSection = document.getElementById("brand-section");
 
-const API_BASE_URL = "http://api.alikooshesh.ir:3000";
-const API_KEY =
-  "sabaICDm86Vi9PHRnAI7WNKrNRFRf9PzcRC1p2nH8JtcgOgZdMR8Qu119yuXY5mdFq2xdgsUk5CtvdnaITGoR4RS92bhaRUugU9RQyGkvespZ6ln2pfs1RmoeY5O6H2z";
-const ACCESS_TOKEN =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NzY3ZmMzYmRhODllOGMwOWFhZWM0ZSIsImlhdCI6MTczNTgxOTIxOCwiZXhwIjoxNzM1OTkyMDE4fQ.8snBmc_2MFf6BF62faNWHa0w2o_9Zk4J5J__6rx3RBk";
+export const isUserLoggedin = () => {
+  const token = localStorage.getItem("token");
+  if (token) {
+    return true;
+  } else {
+    location.href = "../login/login.html";
+  }
+
+  return false;
+};
+isUserLoggedin();
+const brandList = [
+  "ALL",
+  "NIKE",
+  "PUMA",
+  "ADIDAS",
+  "NEWBALANCE",
+  "CONVERSE",
+  "ASICS",
+];
 
 // services
 
-// GET
-async function getProductList() {
-  try {
-    const response = await fetch(`${API_BASE_URL}/api/records/products`, {
-      method: "GET",
-      headers: {
-        api_key: API_KEY,
-        Authorization: `Bearer ${ACCESS_TOKEN}`,
-      },
-    });
-    console.log(response);
-
-    if (!response.ok) {
-      throw new Error("has error");
-    }
-    const result = await response.json();
-    console.log(result);
-
-    renderProduct(result.records);
-    return result;
-  } catch (error) {
-    console.log(`from catch: ${error.message}`);
-  }
-}
-
-getProductList();
-
+// render products
 function renderProduct(product) {
-  console.log(product);
   products.innerHTML = "";
+  if (!product) {
+    return null;
+  }
   products.innerHTML = product
-    .map((element) => {
+    ?.map((element) => {
       return `<a href="../product/product.html?id=${element.id}"> <div class="flex flex-col items-center">
           <!-- product image -->
           <div
@@ -68,3 +63,36 @@ function renderProduct(product) {
     })
     .join("");
 }
+
+document
+  .getElementById("allProducts")
+  .addEventListener("click", renderProduct());
+
+// async function callGetProductList(brand) {
+//   const products = await getProductsList(brand);
+//   renderProduct(products.records);
+// }
+
+window.callGetProductList = async (brand) => {
+  const products = await getProductsList(brand);
+  renderProduct(products.records);
+};
+
+function renderBrandButtons() {
+  // console.log("called");
+  brandSection.innerHTML = "";
+
+  brandList.forEach((b) => {
+    brandSection.innerHTML += `
+    <button
+            onclick="callGetProductList('${b}')"
+            class="px-5 py-2 border border-[#152536] rounded-[25px] bg-white text-[#152536] font-semibold text-base leading-[19.36px] hover:bg-[#152536] hover:text-white"
+          >
+            ${b}
+          </button>
+    `;
+  });
+}
+
+renderBrandButtons();
+callGetProductList("ALL");

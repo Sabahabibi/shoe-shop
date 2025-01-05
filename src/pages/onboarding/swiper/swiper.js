@@ -20,7 +20,7 @@ const customNextBtn = document.getElementById("custom-next");
 
 customNextBtn.addEventListener("click", () => {
   if (swiper.isEnd) {
-    window.location.href = "../log-in/log-in.html";
+    window.location.href = "../../login/login.html";
   } else {
     swiper.slideNext();
   }

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+.mybody {
+  font-family: myFirstFont;
+}
