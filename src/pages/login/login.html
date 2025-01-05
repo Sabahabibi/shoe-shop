@@ -40,6 +40,7 @@
             alt="Email"
           />
           <input
+            id="email-input"
             class="pl-9 px-6 py-2 bg-[#FAFAFA] w-full max-w-[380px]"
             type="email"
             placeholder="Email"
@@ -53,6 +54,7 @@
             alt="password"
           />
           <input
+            id="password-input"
             class="pl-9 px-6 py-2 bg-[#FAFAFA] w-full max-[380px]"
             type="password"
             placeholder="Password"
@@ -71,12 +73,14 @@
         <input type="checkbox" name="remember" value="remember" id="remember" />
         <label for="remember" class="text-[#212529]">Remember me</label>
       </div>
-
+      <!-- sign in button -->
       <button
-        class="w-[380px] h-[47px] m-[255px] bg-[#212529] text-white rounded-[30px] border border-[#212529] opacity-65 px-[16px] py-[12px] gap-[8px] text-[14px] font-medium leading-[21px]"
+        id="signIn-btn"
+        class="w-[380px] h-[47px] m-[255px] bg-[#212529] text-white rounded-[30px] border border-[#212529] opacity-65 px-[16px] py-[12px] gap-[8px] text-[14px] font-medium leading-[21px] active:bg-black"
       >
         Sign In
       </button>
     </div>
+    <script src="login.js" type="module"></script>
   </body>
 </html>

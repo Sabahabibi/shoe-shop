@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="home.css" />
     <title>home shoea</title>
   </head>
-  <body>
+  <body class="">
     <!-- Home page sections -->
     <div class="px-6">
       <!-- header of home page -->
@@ -38,11 +38,12 @@
             src="../../assets/images/icones/notification.svg"
             alt="notification"
           />
-          <img
-            class="w-6 h-[ 22.5px]"
-            src="../../assets/images/icones/favourite.svg"
-            alt="favourite"
-          />
+          <a href="my-wishlist/whishlist.html">
+            <img
+              class="w-6 h-[ 22.5px]"
+              src="../../assets/images/icones/favourite.svg"
+              alt="favourite"
+          /></a>
         </div>
       </div>
       <!-- search section -->
@@ -53,7 +54,7 @@
           alt="search"
         />
         <input
-          class="pl-8 px-6 py-2 bg-[#FAFAFA] w-full max-w-[380px] text-[#BAB8BC] rounded-md"
+          class="pl-8 px-6 py-2 bg-[#FAFAFA] w-full max-w-[380px] text-[#BAB8BC] rounded-md focus:outline-none focus:border-2 focus:border-black"
           type="search"
           placeholder="Search"
         />
@@ -61,124 +62,139 @@
       <!-- brands section -->
       <div class="grid grid-cols-4 gap-[28px] pt-[10px] pb-[16px]">
         <!-- nike -->
-        <div class="flex flex-col items-center">
-          <div
-            class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
-          >
-            <img
-              class="w-[30px] h[19px]"
-              src="../../assets/images/brands/nike.svg"
-              alt="nike"
-            />
-          </div>
-          <p
-            class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
-          >
-            Nike
-          </p>
-        </div>
+        <a href="/src/pages/home/brand/brands.html?brand=NIKE">
+          <div class="flex flex-col items-center">
+            <div
+              class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
+            >
+              <img
+                class="w-[30px] h[19px]"
+                src="../../assets/images/brands/nike.svg"
+                alt="nike"
+              />
+            </div>
+            <p
+              class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
+            >
+              Nike
+            </p>
+          </div></a
+        >
+
         <!-- Addidas -->
-        <div class="flex flex-col items-center">
-          <div
-            class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
-          >
-            <img
-              class="w-[30px] h[19px]"
-              src="../../assets/images/brands/addidas.svg"
-              alt="Adidas"
-            />
-          </div>
-          <p
-            class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
-          >
-            Adidas
-          </p>
-        </div>
+        <a href="/src/pages/home/brand/brands.html?brand=ADIDAS"
+          ><div class="flex flex-col items-center">
+            <div
+              class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
+            >
+              <img
+                class="w-[30px] h[19px]"
+                src="../../assets/images/brands/addidas.svg"
+                alt="Adidas"
+              />
+            </div>
+            <p
+              class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
+            >
+              Adidas
+            </p>
+          </div></a
+        >
         <!-- Puma-->
-        <div class="flex flex-col items-center">
-          <div
-            class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center text-[#152536]"
-          >
-            <img
-              class="w-[30px] h[19px]"
-              src="../../assets/images/brands/puma.svg"
-              alt="Image 3"
-            />
-          </div>
-          <p
-            class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
-          >
-            Puma
-          </p>
-        </div>
+        <a href="/src/pages/home/brand/brands.html?brand=PUMA"
+          ><div class="flex flex-col items-center">
+            <div
+              class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center text-[#152536]"
+            >
+              <img
+                class="w-[30px] h[19px]"
+                src="../../assets/images/brands/puma.svg"
+                alt="Image 3"
+              />
+            </div>
+            <p
+              class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
+            >
+              Puma
+            </p>
+          </div></a
+        >
         <!-- Asics-->
-        <div class="flex flex-col items-center">
-          <div
-            class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
-          >
-            <img
-              class="w-[30px] h[19px]"
-              src="../../assets/images/brands/asics.svg"
-              alt="Asics"
-            />
-          </div>
-          <p
-            class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
-          >
-            Asics
-          </p>
-        </div>
+        <a href="/src/pages/home/brand/brands.html?brand=ASICS"
+          ><div class="flex flex-col items-center">
+            <div
+              class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
+            >
+              <img
+                class="w-[30px] h[19px]"
+                src="../../assets/images/brands/asics.svg"
+                alt="Asics"
+              />
+            </div>
+            <p
+              class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
+            >
+              Asics
+            </p>
+          </div></a
+        >
         <!-- Reebok -->
-        <div class="flex flex-col items-center">
-          <div
-            class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
-          >
-            <img
-              class="w-[30px] h[19px]"
-              src="../../assets/images/brands/reebok.svg"
-              alt="reebok"
-            />
-          </div>
-          <p
-            class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
-          >
-            Reebok
-          </p>
-        </div>
+        <a href="/src/pages/home/brand/brands.html?brand=REEBOK"
+          ><div class="flex flex-col items-center">
+            <div
+              class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
+            >
+              <img
+                class="w-[30px] h[19px]"
+                src="../../assets/images/brands/reebok.svg"
+                alt="reebok"
+              />
+            </div>
+            <p
+              class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
+            >
+              Reebok
+            </p>
+          </div></a
+        >
         <!-- New balance -->
-        <div class="flex flex-col items-center">
-          <div
-            class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
-          >
-            <img
-              class="w-[30px] h[19px]"
-              src="../../assets/images/brands/newbalance.svg"
-              alt="Image 6"
-            />
-          </div>
-          <p
-            class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
-          >
-            New Balance
-          </p>
-        </div>
+        <a href="/src/pages/home/brand/brands.html?brand=NEW BALANCE"
+          ><div class="flex flex-col items-center">
+            <div
+              class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
+            >
+              <img
+                class="w-[30px] h[19px]"
+                src="../../assets/images/brands/newbalance.svg"
+                alt="Image 6"
+              />
+            </div>
+            <p
+              class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
+            >
+              New Balance
+            </p>
+          </div></a
+        >
         <!-- Converse -->
-        <div class="flex flex-col items-center">
-          <div
-            class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
-          >
-            <img
-              class="w-[30px] h[19px]"
-              src="../../assets/images/brands/converse.svg"
-              alt="converse"
-            />
+        <a href="/src/pages/home/brand/brands.html?brand=CONVERSE">
+          <div class="flex flex-col items-center">
+            <div
+              class="bg-[#ECECEC] rounded-full w-[60px] h-[60px] flex items-center justify-center"
+            >
+              <img
+                class="w-[30px] h[19px]"
+                src="../../assets/images/brands/converse.svg"
+                alt="converse"
+              />
+            </div>
+            <p
+              class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
+            >
+              Converse
+            </p>
           </div>
-          <p
-            class="pt-[13px] text-sm font-semibold leading-[16.94px] tracking-[-0.05em] text-center text-[#152536]"
-          >
-            Converse
-          </p>
-        </div>
+        </a>
         <!-- More .. -->
         <div class="flex flex-col items-center">
           <div
@@ -203,17 +219,26 @@
           <p class="font-semibold color-[#152536] text-xl leading-[24.2px]">
             Most Popular
           </p>
-          <p class="text-base font-semibold color-[#152536] leading-[19.36px]">
-            See All
-          </p>
+          <a href="most-popular/popular.html">
+            <p
+              class="text-base font-semibold color-[#152536] leading-[19.36px]"
+            >
+              See All
+            </p>
+          </a>
         </div>
-        <div class="flex gap-3 overflow-x-auto custom-scroll">
+        <div
+          id="brand-section"
+          class="flex gap-3 overflow-x-auto custom-scroll"
+        >
           <button
+            id="allProducts"
             class="px-5 py-2 border border-[#152536] rounded-[25px] bg-white text-[#152536] font-semibold text-base leading-[19.36px] hover:bg-[#152536] hover:text-white"
           >
             All
           </button>
           <button
+            id="NikeProducts"
             class="px-5 py-2 border border-[#152536] rounded-[25px] bg-white text-[#152536] font-semibold text-base leading-[19.36px] hover:bg-[#152536] hover:text-white"
           >
             Nike
@@ -252,58 +277,65 @@
       </div>
       <!-- products cards -->
       <div id="products" class="grid grid-cols-2 gap-6 pt-6"></div>
-      <!-- footer = navbar home page -->
 
+      <!-- footer = navbar home page -->
       <nav
         class="fixed bottom-0 left-0 w-full z-50 flex gap-[44px] justify-center pt-4 pb-4 bg-white"
       >
         <!-- home nav -->
-        <div class="flex flex-col gap-2">
-          <img src="../../assets/images/icones/home.svg" alt="home" />
-          <a
-            href="#home"
-            class="text-[#152536] font-semibold text-[10px] leading-[12.1px] tracking-[-4%]"
-            >Home</a
+        <div>
+          <a class="flex flex-col gap-2" href="">
+            <img src="../../assets/images/icones/home.svg" alt="home" />
+            <p
+              href="#home"
+              class="text-[#152536] font-semibold text-[10px] leading-[12.1px] tracking-[-4%]"
+            >
+              Home
+            </p></a
           >
         </div>
         <!-- cart nav -->
-        <div class="flex flex-col gap-2">
+        <a class="flex flex-col gap-2" href="../cart/cart.html">
           <img src="../../assets/images/icones/cart.svg" alt="home" />
-          <a
-            href="#cart"
+          <p
             class="text-[#152536] font-semibold text-[10px] leading-[12.1px] tracking-[-4%]"
-            >Cart</a
           >
-        </div>
+            Cart
+          </p></a
+        >
+
         <!-- orders nav -->
-        <div class="flex flex-col gap-2">
+        <a class="flex flex-col gap-2" href="../order/order.html">
           <img src="../../assets/images/icones/order.svg" alt="orders" />
-          <a
+          <p
             href="#order"
             class="text-[#152536] font-semibold text-[10px] leading-[12.1px] tracking-[-4%]"
-            >Orders</a
           >
-        </div>
+            Orders
+          </p></a
+        >
+
         <!-- wallet nav -->
-        <div class="flex flex-col gap-2">
-          <img src="../../assets/images/icones/wallet.svg" alt="wallet" />
-          <a
-            href="#wallet"
+        <a class="flex flex-col gap-2" href=""
+          ><img src="../../assets/images/icones/wallet.svg" alt="wallet" />
+          <p
             class="text-[#152536] font-semibold text-[10px] leading-[12.1px] tracking-[-4%]"
-            >Wallet</a
           >
-        </div>
+            Wallet
+          </p></a
+        >
+
         <!-- profile nav -->
-        <div class="flex flex-col gap-2">
+        <a class="flex flex-col gap-2" href="">
           <img src="../../assets/images/icones/profile.svg" alt="profile" />
-          <a
-            href="#profile"
+          <p
             class="text-[#152536] font-semibold text-[10px] leading-[12.1px] tracking-[-4%]"
-            >Profile</a
           >
-        </div>
+            Profile
+          </p></a
+        >
       </nav>
     </div>
-    <script src="home.js"></script>
+    <script src="home.js" type="module"></script>
   </body>
 </html>

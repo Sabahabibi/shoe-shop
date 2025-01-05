@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../output.css" />
+    <link rel="stylesheet" href="../home.css" />
+    <title>wishlist</title>
+  </head>
+  <body class="p-6">
+    <!-- most popular brands section -->
+    <div class="flex flex-col gap-[20px]">
+      <div class="flex justify-between items-center">
+        <div class="flex gap-3 items-center">
+          <a href="../home.html">
+            <img
+              src="../../../assets/images/icones/arrow-left-short.svg"
+              alt=""
+          /></a>
+
+          <p class="font-semibold color-[#152536] text-xl leading-[24.2px]">
+            My Wishlist
+          </p>
+        </div>
+        <img
+          src="../../../assets/images/icones/search-black.svg"
+          alt="search"
+        />
+      </div>
+      <div id="brand-section" class="flex gap-3 overflow-x-auto custom-scroll">
+        <button
+          id="allProducts"
+          class="px-5 py-2 border border-[#152536] rounded-[25px] bg-white text-[#152536] font-semibold text-base leading-[19.36px] hover:bg-[#152536] hover:text-white"
+        >
+          All
+        </button>
+        <button
+          id="NikeProducts"
+          class="px-5 py-2 border border-[#152536] rounded-[25px] bg-white text-[#152536] font-semibold text-base leading-[19.36px] hover:bg-[#152536] hover:text-white"
+        >
+          Nike
+        </button>
+        <button
+          class="px-5 py-2 border border-[#152536] rounded-[25px] bg-white text-[#152536] font-semibold text-base leading-[19.36px] hover:bg-[#152536] hover:text-white"
+        >
+          Adidas
+        </button>
+        <button
+          class="px-5 py-2 border border-[#152536] rounded-[25px] bg-white text-[#152536] font-semibold text-base leading-[19.36px] hover:bg-[#152536] hover:text-white"
+        >
+          Puma
+        </button>
+        <button
+          class="px-5 py-2 border border-[#152536] rounded-[25px] bg-white text-[#152536] font-semibold text-base leading-[19.36px] hover:bg-[#152536] hover:text-white"
+        >
+          Asics
+        </button>
+        <button
+          class="px-5 py-2 border border-[#152536] rounded-[25px] bg-white text-[#152536] font-semibold text-base leading-[19.36px] hover:bg-[#152536] hover:text-white"
+        >
+          Reebok
+        </button>
+        <button
+          class="px-5 py-2 border border-[#152536] rounded-[25px] bg-white text-[#152536] font-semibold text-base leading-[19.36px] hover:bg-[#152536] hover:text-white"
+        >
+          Newbalance
+        </button>
+        <button
+          class="px-5 py-2 border border-[#152536] rounded-[25px] bg-white text-[#152536] font-semibold text-base leading-[19.36px] hover:bg-[#152536] hover:text-white"
+        >
+          Converse
+        </button>
+      </div>
+    </div>
+    <!-- products cards -->
+    <div id="products" class="grid grid-cols-2 gap-6 pt-6"></div>
+    <script src="wishlist.js" type="module"></script>
+  </body>
+</html>

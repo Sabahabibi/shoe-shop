@@ -7,13 +7,16 @@
     <title>Cart</title>
   </head>
   <body>
-    <!-- <div class="bg-black opacity-10 w-full h-screen"></div> -->
-    <!-- section Carts container -->
     <div>
       <!-- header  cart -->
       <div class="mx-6 my-6">
         <div class="flex justify-between">
           <div class="flex items-center gap-4">
+            <a href="../home/home.html"
+              ><img
+                src="../../assets/images/icones/arrow-left-short.svg"
+                alt="arrow left"
+            /></a>
             <img
               class="w-6 h-6"
               src="../../assets/images/logo/logo.svg"
@@ -53,8 +56,8 @@
               </h1>
             </div>
             <img
-              class="w-8 h-8 cursor-pointer"
-              src="../../assets/images/icones/"
+              class="w-7 h-7 cursor-pointer"
+              src="../../assets/images/icones/Delete 1.svg"
               alt="Trash Icon"
             />
           </div>
@@ -72,15 +75,22 @@
             <p class="text-lg font-semibold mr-4">$105.00</p>
 
             <div class="flex items-center gap-3 bg-gray-100 rounded-3xl p-2">
-              <button class="w-6 h-6 flex items-center justify-center">
+              <button
+                id="decrease"
+                class="w-6 h-6 flex items-center justify-center"
+              >
                 -
               </button>
               <button
+                id="counter"
                 class="w-6 h-6 flex items-center justify-center font-medium"
               >
                 0
               </button>
-              <button class="w-6 h-6 flex items-center justify-center">
+              <button
+                id="increase"
+                class="w-6 h-6 flex items-center justify-center"
+              >
                 +
               </button>
             </div>
@@ -88,7 +98,7 @@
         </div>
       </div>
       <!-- Footer cart -->
-      <!-- <div
+      <div
         class="absolute bottom-0 left-0 w-full h-[230px] rounded-tr-[40px] rounded-tl-[40px] border-t-[1px]"
       >
         <div class="flex items-center gap-8 pt-6">
@@ -109,9 +119,9 @@
             </button>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- Navigation Bottom -->
-      <!-- <div>
+      <div>
         <div class="fixed bottom-0 left-0 w-full">
           <div class="flex gap-10 py-4 px-6 h-28 border overflow-y-auto">
             <div class="flex flex-col items-center">
@@ -130,18 +140,11 @@
               <p>Home</p>
             </div>
             <div class="flex flex-col items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="bi bi-bag"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
-                />
-              </svg>
+              <img
+                class="w-10"
+                src="../../assets/images/icones/bag-fill.svg"
+                alt=""
+              />
               <p>Cart</p>
             </div>
             <div class="flex flex-col items-center">
@@ -192,109 +195,9 @@
             </div>
           </div>
         </div>
-      </div> -->
-    </div>
-    <!-- در حال حاضر display:Black -->
-
-    <div class="h-full">
-      <div
-        class="z-10 w-full h-[500px] absolute bottom-0 left-0 rounded-t-[60px]"
-      >
-        <div>
-          <!-- gray dash -->
-          <div class="flex justify-center items-center">
-            <div class="w-10 h-[3px] bg-gray-300 my-4"></div>
-          </div>
-          <!-- text remove -->
-          <div>
-            <h1
-              class="pt-2 text-2xl flex justify-center font-semibold text-black drop-shadow-md"
-            >
-              Remove From Cart?
-            </h1>
-          </div>
-          <!-- gray line -->
-          <div class="w-[90%] h-[1px] bg-gray-200 my-4 mx-auto"></div>
-          <div class="p-5 h-[200px] flex items-center gap-2">
-            <!--  Cart  -->
-            <div
-              class="m-[20px] rounded-2xl p-5 h-full shadow-lg flex items-center gap-2"
-            >
-              <!-- Image of Section One -->
-              <div
-                class="bg-gray-100 rounded-3xl w-25 h-15 items-center justify-center flex"
-              >
-                <img
-                  src="../../assets/images/products/3.webp"
-                  alt="Product Image"
-                  class="w-[120px] h-[120px] object-contain py-2 px-2"
-                />
-              </div>
-              <div class="flex flex-col gap-4 pl-4">
-                <!-- Name of MyCart -->
-                <div class="flex items-center gap-4 w-full">
-                  <div class="flex-grow">
-                    <h1 class="text-xl whitespace-nowrap font-semibold">
-                      Air Jordan 3 Retro
-                    </h1>
-                  </div>
-                  <img
-                    class="w-8 h-8 cursor-pointer"
-                    src="../../assets/images/icones/"
-                    alt="Trash Icon"
-                  />
-                </div>
-
-                <!-- Color and Size -->
-                <div class="flex gap-2 items-center">
-                  <div class="bg-gray-700 rounded-full w-6 h-6"></div>
-                  <p class="text-gray-500 text-sm">Black</p>
-                  <p>|</p>
-                  <p class="text-gray-500 text-sm">Size = 42</p>
-                </div>
-
-                <!-- Price and Buttons -->
-                <div class="flex justify-center items-center">
-                  <p class="text-lg font-semibold mr-4">$105.00</p>
-
-                  <div
-                    class="flex items-center gap-3 bg-gray-100 rounded-3xl p-2"
-                  >
-                    <button class="w-6 h-6 flex items-center justify-center">
-                      -
-                    </button>
-                    <button
-                      class="w-6 h-6 flex items-center justify-center font-medium"
-                    >
-                      0
-                    </button>
-                    <button class="w-6 h-6 flex items-center justify-center">
-                      +
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- gray line -->
-        <div class="pt-2">
-          <div class="w-[90%] h-[1px] bg-gray-400 my-4 mx-auto pt-"></div>
-        </div>
-        <!-- buttons -->
-        <div class="flex items-center justify-center gap-3 px-6 pt-2">
-          <button
-            class="w-[200px] shadow-xl h-16 text-lg text-black bg-gray-200 flex items-center justify-center rounded-[50px]"
-          >
-            Cancel
-          </button>
-          <button
-            class="w-[200px] shadow-xl h-16 text-lg text-white bg-black flex items-center justify-center rounded-[50px]"
-          >
-            Yes, Remove
-          </button>
-        </div>
       </div>
     </div>
+
+    <script type="module" src="cart.js"></script>
   </body>
 </html>

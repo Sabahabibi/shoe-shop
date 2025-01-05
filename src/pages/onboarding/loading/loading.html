@@ -4,50 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../../output.css" />
+    <link rel="stylesheet" href="loading.css" />
     <title>loading-page</title>
-    <style>
-      .loader {
-        border: 16px solid #f3f3f3;
-        border-radius: 50%;
-        border-top: 16px solid #3498db;
-        width: 120px;
-        height: 120px;
-        -webkit-animation: spin 2s linear infinite; /* Safari */
-        animation: spin 2s linear infinite;
-      }
-
-      /* Safari */
-      @-webkit-keyframes spin {
-        0% {
-          -webkit-transform: rotate(0deg);
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-        }
-      }
-
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-    </style>
   </head>
-  <body>
-    <!-- shoea logo -->
-    <div class="absolute top-[392px] bottom-[471px] left-[99px] right-[98px]">
-      <img
-        src="../../../assets/images/logo/Group 2.svg"
-        alt="shoes-shop-logo"
-      />
+  <body class="flex items-center justify-center h-screen">
+    <!-- لوگو -->
+    <div class="flex flex-col">
+      <div class="text-center">
+        <img
+          src="../../../assets/images/logo/Group 2.svg"
+          alt="shoes-shop-logo"
+          class="mb-8 mx-auto"
+        />
+        <!-- لودر -->
+      </div>
+      <div class="text-center">
+        <img
+          src="../../../assets/images/icones/spinner-atom.svg"
+          alt="loader"
+          class="w-16 h-16 spin mx-auto"
+        />
+      </div>
     </div>
-    <!-- loading svg  -->
-    <!-- <div class="absolute top-[761px] bottom-[117px] left-[190px] right-[190px]">
-      <img src="../../../assets/images/icones/spinner-atom.svg" alt="loading" />
-    </div> -->
-    <div class="loader"></div>
+    <script src="loadingscript.js"></script>
   </body>
 </html>
