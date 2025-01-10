@@ -23,8 +23,9 @@ const products = [
     colors: ["black", "brown", "white", "blue", "red"],
     is_in_inventory: true,
     items_left: 3,
-    imageURL:
+    imageURL: [
       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-mens-running-shoe-DgF6nr.jpg",
+    ],
     slug: "nike-react-miler",
   },
   {

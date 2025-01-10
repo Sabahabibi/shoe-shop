@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="loading.css" />
     <title>loading-page</title>
   </head>
-  <body class="flex items-center justify-center h-screen">
-    <!-- لوگو -->
-    <div class="flex flex-col">
-      <div class="text-center">
+  <body class="flex items-center justify-center h-screen flex-col">
+    <!-- LOGO -->
+    <div class="flex flex-col justify-center h-full">
+      <div class="flex text-center">
         <img
           src="../../../assets/images/logo/Group 2.svg"
           alt="shoes-shop-logo"
-          class="mb-8 mx-auto"
-        />
-        <!-- لودر -->
-      </div>
-      <div class="text-center">
-        <img
-          src="../../../assets/images/icones/spinner-atom.svg"
-          alt="loader"
-          class="w-16 h-16 spin mx-auto"
+          class=""
         />
       </div>
+    </div>
+    <!-- LOADER -->
+    <div class="flex text-center pb-[100px] gap-24 mb-2">
+      <img
+        src="../../../assets/images/icones/spinner-atom.svg"
+        alt="loader"
+        class="w-12 h-16 spin mx-auto"
+      />
     </div>
     <script src="loadingscript.js"></script>
   </body>
