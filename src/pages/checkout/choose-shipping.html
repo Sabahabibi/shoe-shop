@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>choose shipping</title>
     <link rel="stylesheet" href="../../output.css" />
-    <link rel="stylesheet" href="./ChooseShipping.css" />
+    <link rel="stylesheet" href="checkout.css" />
   </head>
   <body>
     <!-- choose shiping header -->
     <div class="flex my-10 mx-6 items-center gap-2">
-      <img src="../../assets/images/icones/arrow-left-short.svg" alt="" />
+      <a href="checkout.html"
+        ><img
+          src="../../assets/images/icones/arrow-left-short.svg"
+          alt="left arrow"
+      /></a>
       <h1 class="font-semibold text-[25px]">Choose Shipping</h1>
     </div>
+    <!--shipping options carts -->
     <div class="flex flex-col">
-      <!--shipping options carts -->
       <div class="m-4">
         <!-- economy cart -->
         <div
@@ -24,7 +28,7 @@
             class="relative bg-black w-[80px] h-[60px] p-4 rounded-full flex justify-center items-center"
           >
             <img
-              class="w-[35px] h-[35px] rounded-full"
+              class="w-8 h-[35px] rounded-full"
               src="../../assets/images/icones/delivery-package-svgrepo-com.svg"
               alt="economy shipping"
             />
@@ -36,17 +40,9 @@
               61480 Sunbrook Park, PC 5679
             </p>
           </div>
-          <div class="flex gap-4 justify-center items-center">
-            <p id="Price" class="text-xl font-bold">$10</p>
-            <div class="flex justify-center items-start">
-              <div
-                class="w-6 h-6 flex justify-center items-center rounded-full border border-[4px] border-black hover:w-6 hover:h-6"
-              >
-                <div
-                  class="bg-black w-[13px] h-[13px] opacity-0 rounded-full hover:opacity-100 transition-opacity duration-300"
-                ></div>
-              </div>
-            </div>
+          <div class="flex items-center gap-4">
+            <p class="text-xl font-bold">$15</p>
+            <input type="radio" name="price" class="custom-radio" />
           </div>
         </div>
       </div>
@@ -71,17 +67,9 @@
               Estimated Arrival, Dec 20-22
             </p>
           </div>
-          <div class="flex gap-4 justify-center items-center">
-            <p id="Price" class="text-xl font-bold">$15</p>
-            <div class="flex justify-center items-start">
-              <div
-                class="w-6 h-6 flex justify-center items-center rounded-full border border-[4px] border-black hover:w-6 hover:h-6"
-              >
-                <div
-                  class="bg-black w-[13px] h-[13px] opacity-0 rounded-full hover:opacity-100 transition-opacity duration-300"
-                ></div>
-              </div>
-            </div>
+          <div class="flex items-center gap-4">
+            <p class="text-xl font-bold">$15</p>
+            <input type="radio" name="price" class="custom-radio" />
           </div>
         </div>
       </div>
@@ -106,17 +94,9 @@
               Estimated Arrival, Dec 19-20
             </p>
           </div>
-          <div class="flex gap-4 justify-center items-center">
-            <p id="Price" class="text-xl font-bold">$20</p>
-            <div class="flex justify-center items-start">
-              <div
-                class="w-6 h-6 flex justify-center items-center rounded-full border border-[4px] border-black hover:w-6 hover:h-6"
-              >
-                <div
-                  class="bg-black w-[13px] h-[13px] opacity-0 rounded-full hover:opacity-100 transition-opacity duration-300"
-                ></div>
-              </div>
-            </div>
+          <div class="flex items-center gap-4">
+            <p class="text-xl font-bold">$15</p>
+            <input type="radio" name="price" class="custom-radio" />
           </div>
         </div>
       </div>
@@ -141,31 +121,25 @@
               Estimated Arrival, Dec 18-19
             </p>
           </div>
-          <div class="flex gap-4 justify-center items-center">
-            <p id="Price" class="text-xl font-bold">$30</p>
-            <div class="flex justify-center items-start">
-              <div
-                class="w-6 h-6 flex justify-center items-center rounded-full border border-[4px] border-black hover:w-6 hover:h-6"
-              >
-                <div
-                  class="bg-black w-[13px] h-[13px] opacity-0 rounded-full hover:opacity-100 transition-opacity duration-300"
-                ></div>
-              </div>
-            </div>
+          <div class="flex items-center gap-4">
+            <p class="text-xl font-bold">$15</p>
+            <input type="radio" name="price" class="custom-radio" />
           </div>
         </div>
       </div>
       <!-- apply shipping button -->
       <div
-        class="bg-white w-full h-28 border-t-[10px] rounded-t-[40px] fixed bottom-0 left-0 border-gray-300 border border-t-[1px] border-x-1 flex justify-center items-center gap-4"
+        class="bg-white w-full h-28 rounded-t-[40px] fixed bottom-0 left-0 border-gray-300 border border-t-[1px] border-x-1 flex justify-center items-center gap-4"
       >
         <div class="flex justify-center">
-          <button
-            id="Btn-Apply"
-            class="font-semibold w-96 h-16 bg-black text-white rounded-full text-lg"
+          <a href="checkout.html"
+            ><button
+              id="Btn-Apply"
+              class="font-semibold w-96 h-16 bg-black text-white rounded-full text-lg"
+            >
+              Apply
+            </button></a
           >
-            Apply
-          </button>
         </div>
       </div>
     </div>

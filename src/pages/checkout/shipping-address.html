@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShippingAddress</title>
     <link rel="stylesheet" href="../../output.css" />
-    <link rel="stylesheet" href="./ShippingAddress.css" />
     <link rel="stylesheet" href="checkout.css" />
   </head>
   <body class="px-6">
     <div class="flex my-10 items-center gap-2">
-      <img src="../../assets/images/icones/arrow-left-short.svg" alt="" />
+      <a href="checkout.html">
+        <img
+          src="../../assets/images/icones/arrow-left-short.svg"
+          alt="arrow left"
+      /></a>
       <h1 class="font-semibold text-[25px]">Shipping Address</h1>
     </div>
     <div class="flex flex-col gap-7">
@@ -23,11 +26,15 @@
           <div
             class="bg-gray-200 w-[45px] h-[45px] p-4 rounded-full flex justify-center items-center"
           >
-            <img
-              class="w-8 h-8 object-cover"
-              src="../../assets/images/icones/location-services-active-svgrepo-com.svg"
-              alt="location"
-            />
+            <div
+              class="bg-black w-[35px] h-[35px] p-4 rounded-full flex justify-center items-center relative"
+            >
+              <img
+                class="w-8 h-8 object-cover absolute"
+                src="../../assets/images/icones/location-services-active-svgrepo-com.svg"
+                alt="location"
+              />
+            </div>
           </div>
           <div>
             <div class="flex flex-col gap-2">
@@ -39,14 +46,17 @@
                   Default
                 </div>
               </div>
-              <p class="text-gray-400 text-[14px] whitespace-nowrap">
+              <p
+                id="addressDetails"
+                class="text-gray-400 text-[14px] whitespace-nowrap"
+              >
                 61480 Sunbrook Park, PC 5679
               </p>
             </div>
           </div>
         </div>
 
-        <input class="border border-black accent-black" type="radio" />
+        <input type="radio" name="price" class="custom-radio" />
       </div>
       <!-- cart office -->
       <div
@@ -57,11 +67,15 @@
           <div
             class="bg-gray-200 w-[45px] h-[45px] p-4 rounded-full flex justify-center items-center"
           >
-            <img
-              class="w-8 h-8 object-cover"
-              src="../../assets/images/icones/location-services-active-svgrepo-com.svg"
-              alt="location"
-            />
+            <div
+              class="bg-black w-[35px] h-[35px] p-4 rounded-full flex justify-center items-center relative"
+            >
+              <img
+                class="w-8 h-8 object-cover absolute"
+                src="../../assets/images/icones/location-services-active-svgrepo-com.svg"
+                alt="location"
+              />
+            </div>
           </div>
           <div>
             <div class="flex flex-col gap-2">
@@ -73,7 +87,7 @@
           </div>
         </div>
 
-        <input class="border border-black" type="radio" />
+        <input type="radio" name="price" class="custom-radio" />
       </div>
       <!-- cart Apartment -->
       <div
@@ -84,11 +98,15 @@
           <div
             class="bg-gray-200 w-[45px] h-[45px] p-4 rounded-full flex justify-center items-center"
           >
-            <img
-              class="w-8 h-8 object-cover"
-              src="../../assets/images/icones/location-services-active-svgrepo-com.svg"
-              alt="location"
-            />
+            <div
+              class="bg-black w-[35px] h-[35px] p-4 rounded-full flex justify-center items-center relative"
+            >
+              <img
+                class="w-8 h-8 object-cover absolute"
+                src="../../assets/images/icones/location-services-active-svgrepo-com.svg"
+                alt="location"
+              />
+            </div>
           </div>
           <div>
             <div class="flex flex-col gap-2">
@@ -100,7 +118,7 @@
           </div>
         </div>
 
-        <input class="border border-black" type="radio" />
+        <input type="radio" name="price" class="custom-radio" />
       </div>
       <!-- cart Parents House -->
       <div
@@ -111,11 +129,15 @@
           <div
             class="bg-gray-200 w-[45px] h-[45px] p-4 rounded-full flex justify-center items-center"
           >
-            <img
-              class="w-8 h-8 object-cover"
-              src="../../assets/images/icones/location-services-active-svgrepo-com.svg"
-              alt="location"
-            />
+            <div
+              class="bg-black w-[35px] h-[35px] p-4 rounded-full flex justify-center items-center relative"
+            >
+              <img
+                class="w-8 h-8 object-cover absolute"
+                src="../../assets/images/icones/location-services-active-svgrepo-com.svg"
+                alt="location"
+              />
+            </div>
           </div>
           <div>
             <div class="flex flex-col gap-2">
@@ -127,7 +149,7 @@
           </div>
         </div>
 
-        <input class="border border-black" type="radio" />
+        <input type="radio" name="price" class="custom-radio" />
       </div>
     </div>
 
@@ -141,14 +163,17 @@
     <div
       class="bg-white w-full h-28 rounded-t-[40px] fixed bottom-0 left-0 flex justify-center items-center gap-4"
     >
-      <div class="flex justify-center">
-        <button
-          id="Btn-Apply"
-          class="font-semibold w-96 h-16 bg-black text-white rounded-full text-lg"
-        >
-          Apply
-        </button>
-      </div>
+      <a href="checkout.html">
+        <div class="flex justify-center">
+          <button
+            id="applyBtn"
+            class="font-semibold w-96 h-16 bg-black text-white rounded-full text-lg"
+          >
+            Apply
+          </button>
+        </div></a
+      >
     </div>
+    <script src="checkoutShipping.js" type="module"></script>
   </body>
 </html>

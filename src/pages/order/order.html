@@ -177,87 +177,83 @@
     </div>
 
     <!-- Navigation Bottom -->
-    <div>
-      <div class="fixed bottom-0 left-0 w-full">
-        <div class="flex gap-10 py-4 px-6 h-28 border overflow-y-auto">
-          <div class="flex flex-col items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-house-door"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
-              />
-            </svg>
-            <p>Home</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-bag"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
-              />
-            </svg>
-            <p>Cart</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-cart-dash"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
-              <path
-                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
-              />
-            </svg>
-            <p>Orders</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-wallet2"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z"
-              />
-            </svg>
-            <p>Wallet</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-person"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
-              />
-            </svg>
-            <p>Profile</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <nav
+      class="fixed bottom-0 left-0 w-full z-50 flex gap-[44px] justify-center pt-4 pb-4 bg-white"
+    >
+      <!-- home nav -->
+      <a
+        class="flex flex-col items-center gap-1 text-center"
+        href="../home/home.html"
+      >
+        <img
+          class="w-6"
+          src="../../assets/images/icones/house-door.svg"
+          alt="home"
+        />
+        <p
+          class="text-[#152536] font-semibold text-[10px] leading-[12.1px] tracking-[-4%]"
+        >
+          Home
+        </p>
+      </a>
+
+      <!-- cart nav -->
+      <a
+        class="flex flex-col items-center gap-1 text-center"
+        href="../cart/cart.html"
+      >
+        <img class="w-6" src="../../assets/images/icones/bag.svg" alt="home" />
+        <p
+          class="text-[#152536] font-semibold text-[10px] leading-[12.1px] tracking-[-4%]"
+        >
+          Cart
+        </p>
+      </a>
+
+      <!-- orders nav -->
+      <a
+        class="flex flex-col items-center gap-1 text-center"
+        href="../order/order.html"
+      >
+        <img
+          class="w-6"
+          src="../../assets/images/icones/cart-dash-fill.svg"
+          alt="orders"
+        />
+        <p
+          class="text-[#152536] font-semibold text-[10px] leading-[12.1px] tracking-[-4%]"
+        >
+          Orders
+        </p>
+      </a>
+
+      <!-- wallet nav -->
+      <a class="flex flex-col items-center gap-1 text-center" href="">
+        <img
+          class="w-6"
+          src="../../assets/images/icones/wallet.svg"
+          alt="wallet"
+        />
+        <p
+          class="text-[#152536] font-semibold text-[10px] leading-[12.1px] tracking-[-4%]"
+        >
+          Wallet
+        </p>
+      </a>
+
+      <!-- profile nav -->
+      <a class="flex flex-col items-center gap-1 text-center" href="">
+        <img
+          class="w-6"
+          src="../../assets/images/icones/profile.svg"
+          alt="profile"
+        />
+        <p
+          class="text-[#152536] font-semibold text-[10px] leading-[12.1px] tracking-[-4%]"
+        >
+          Profile
+        </p>
+      </a>
+    </nav>
   </body>
 </html>

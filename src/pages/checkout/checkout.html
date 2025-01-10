@@ -11,11 +11,12 @@
       <!-- checkout header -->
       <div class="flex justify-between py-6 items-center">
         <div class="flex gap-4 justify-center items-center">
-          <img
-            class="w-6 scale-125"
-            src="../../assets/images/icones/arrow-left-short.svg"
-            alt="left arrow"
-          />
+          <a href="../cart/cart.html">
+            <img
+              class="w-6 scale-125"
+              src="../../assets/images/icones/arrow-left-short.svg"
+              alt="left arrow"
+          /></a>
           <h1 class="font-semibold text-[25px]">Checkout</h1>
         </div>
         <div>
@@ -26,9 +27,11 @@
           />
         </div>
       </div>
-      <h1 class="text-xl font-semibold pb-7">Shipping Address</h1>
+      <a href="shipping-address.html">
+        <h1 class="text-xl font-semibold pb-7">Shipping Address</h1></a
+      >
 
-      <!-- cart home -->
+      <!-- shipping address-->
       <div
         class="shadow-[0px_2px_4px_rgba(0,0,0,0.05),_0px_-2px_4px_rgba(0,0,0,0.05)] w-full h-22 p-4 rounded-[18px] flex items-center justify-between"
       >
@@ -38,38 +41,35 @@
             class="bg-gray-200 w-[45px] h-[45px] p-4 rounded-full flex justify-center items-center"
           >
             <div
-              class="bg-black w-8 h-8 rounded-full flex justify-center items-center"
+              class="bg-black w-[35px] h-[35px] p-4 rounded-full flex justify-center items-center relative"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="white"
-                class="bi bi-geo-alt-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
-                />
-              </svg>
+              <img
+                class="w-8 h-8 object-cover absolute"
+                src="../../assets/images/icones/location-services-active-svgrepo-com.svg"
+                alt="location"
+              />
             </div>
           </div>
-
+          <!-- shipping address selected -->
           <div>
             <div class="flex flex-col gap-1">
-              <p class="text-lg font-bold">Home</p>
-              <p class="text-gray-400 text-[14px] whitespace-nowrap">
+              <p id="addressName" class="text-lg font-bold"></p>
+              <p
+                id="addressDetails"
+                class="text-gray-400 text-[14px] whitespace-nowrap"
+              >
                 61480 Sunbrook Park, PC 5679
               </p>
             </div>
           </div>
         </div>
         <div>
-          <img
-            class="w-7"
-            src="../../assets/images/icones/edit-2.svg"
-            alt="edit"
-          />
+          <a href="shipping-address.html">
+            <img
+              class="w-7"
+              src="../../assets/images/icones/edit-2.svg"
+              alt="edit"
+          /></a>
         </div>
       </div>
       <!-- gray border -->
@@ -139,23 +139,26 @@
     </div>
     <h1 class="font-bold text-2xl">Choose Shipping</h1>
     <!-- choose shipping type -->
-    <div class="flex justify-evenly bg-white w-full h-24 rounded-[18px] mt-6">
-      <div class="flex items-center gap-4">
-        <img
-          class="w-8 h-8"
-          src="../../assets/images/icones/truck-11.svg"
-          alt="truck"
-        />
-        <h1 class="text-xl font-semibold">Choose Shipping Type</h1>
-      </div>
-      <div class="flex items-center">
-        <img
-          class="w-6 h-6"
-          src="../../assets/images/icones/arrow-next-svg.svg"
-          alt="next"
-        />
-      </div>
-    </div>
+    <a href="choose-shipping.html"
+      ><div
+        class="flex justify-evenly bg-white w-full h-24 rounded-[18px] mt-6"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            class="w-8 h-8"
+            src="../../assets/images/icones/truck-11.svg"
+            alt="truck"
+          />
+          <h1 class="text-xl font-semibold">Choose Shipping Type</h1>
+        </div>
+        <div class="flex items-center">
+          <img
+            class="w-6 h-6"
+            src="../../assets/images/icones/arrow-next-svg.svg"
+            alt="next"
+          />
+        </div></div
+    ></a>
 
     <!-- gray border -->
     <div class="pt-4">
@@ -201,20 +204,22 @@
       </div>
 
       <!-- continue to payment button -->
-      <div
-        class="w-full h-28 rounded-t-[40px] fixed bottom-0 left-0 flex justify-center items-center gap-4"
-      >
-        <button
-          class="shadow-[0px_4px_6px_rgba(0,0,0,0.1),_0px_-4px_6px_rgba(0,0,0,0.1)] px-14 py-4 bg-black text-white rounded-[100px] text-xl flex items-center gap-2"
+      <a href="payment-methods.html"
+        ><div
+          class="w-full h-28 rounded-t-[40px] fixed bottom-0 left-0 flex justify-center items-center gap-4"
         >
-          Continue to Payment
-          <img
-            class="w-4 h-4 ml-2"
-            src="../../assets/images/icones/right-arrow3-1.svg"
-            alt=""
-          />
-        </button>
-      </div>
+          <button
+            class="shadow-[0px_4px_6px_rgba(0,0,0,0.1),_0px_-4px_6px_rgba(0,0,0,0.1)] px-14 py-4 bg-black text-white rounded-[100px] text-xl flex items-center gap-2"
+          >
+            Continue to Payment
+            <img
+              class="w-4 h-4 ml-2"
+              src="../../assets/images/icones/right-arrow3-1.svg"
+              alt=""
+            />
+          </button></div
+      ></a>
     </div>
+    <script src="checkout.js"></script>
   </body>
 </html>

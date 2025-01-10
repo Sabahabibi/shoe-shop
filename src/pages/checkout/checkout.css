@@ -1,0 +1,38 @@
+/* حذف استایل پیش‌فرض مرورگر */
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  width: 24px; /* اندازه بزرگ‌تر */
+  height: 24px; /* اندازه بزرگ‌تر */
+  border: 2px solid black; /* حاشیه مشکی */
+  border-radius: 50%; /* دایره‌ای شدن */
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* حالت انتخاب نشده */
+.custom-radio::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px; /* اندازه نقطه داخلی */
+  height: 12px; /* اندازه نقطه داخلی */
+  background-color: transparent; /* بدون رنگ در حالت انتخاب نشده */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s;
+}
+
+/* حالت انتخاب شده */
+.custom-radio:checked::before {
+  background-color: black; /* نقطه داخلی مشکی */
+}
+
+/* جلوه فوکوس */
+.custom-radio:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2); /* جلوه سایه */
+}

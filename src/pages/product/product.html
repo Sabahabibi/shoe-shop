@@ -9,205 +9,203 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
     <title>product single page</title>
   </head>
   <body>
     <!-- back page icone -->
-    <button class="icon absolute top-0 left-0 z-50">
-      <img
-        class="pt-[21px] pl-[30px]"
-        src="../../assets/images/icones/arrow-left-short.svg"
-        alt=""
-      />
-    </button>
+    <a href="../home/home.html">
+      <button class="icon absolute top-0 left-0 z-50">
+        <img
+          class="pt-[21px] pl-[30px]"
+          src="../../assets/images/icones/arrow-left-short.svg"
+          alt="arrow left"
+        /></button
+    ></a>
 
-    <!-- swipper product image single page -->
-    <div id="swiperSingleProduct" class="swiper-container h-96">
-      <swiper-container
-        class="mySwiper"
-        pagination="true"
-        pagination-dynamic-bullets="true"
-      >
-        <swiper-slide
-          ><img
-            class="p-10"
-            src="../../assets/images/products/product.svg"
-            alt="product"
-        /></swiper-slide>
-        <swiper-slide
-          ><img
-            class="p-10"
-            src="../../assets/images/products/product.svg"
-            alt="product"
-        /></swiper-slide>
-        <swiper-slide
-          ><img
-            class="p-10"
-            src="../../assets/images/products/product.svg"
-            alt="product"
-        /></swiper-slide>
-      </swiper-container>
-    </div>
-    <!-- product details -->
-    <div class="px-6">
-      <!-- reviews section -->
-      <div id="singleProduct" class="flex flex-col pt-7 gap-4">
-        <div class="flex justify-between items-center">
-          <p class="font-semibold text-[32px] text-[#152536] text-center">
-            Running Sportwear
-          </p>
-          <img src="../../assets/images/icones/favourite.svg" alt="fav" />
-        </div>
-        <div class="flex gap-4 items-center">
-          <p
-            class="bg-[#F3F3F3] text-[#212529] rounded-xl px-3 py-1 text-center text-sm"
+    <!-- daynamic details parent  -->
+    <div id="singleProductContainer">
+      <!-- swipper product image single page -->
+      <div id="swiperSingleProduct" class="swiper-container h-96">
+        <swiper-container
+          id="swiperContainer"
+          class="mySwiper"
+          pagination="true"
+          pagination-dynamic-bullets="true"
+        >
+        </swiper-container>
+      </div>
+
+      <!-- product details -->
+      <div class="px-6">
+        <div id="singleProduct" class="flex flex-col pt-7 gap-4">
+          <!-- productName / daynamic -->
+          <div
+            id="productNameContainer"
+            class="flex justify-between items-center"
           >
-            5.371 sold
-          </p>
+            <p
+              id="productName"
+              class="font-semibold text-[24px] text-[#152536]"
+            ></p>
 
-          <div class="flex items-center gap-1">
-            <svg
-              fill="#181616"
-              width="30px"
-              height="30px"
-              viewBox="-17.16 -17.16 86.32 86.32"
-              xmlns="http://www.w3.org/2000/svg"
-              stroke="#181616"
-              stroke-width="0.0005200000000000001"
+            <!-- like button  -->
+            <button
+              id="likeButton"
+              class="flex items-center justify-center p-4 bg-transparent border-0 cursor-pointer"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke="#b2aeae"
-                stroke-width="0.10400000000000001"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M27.4133467,3.10133815 L32.0133467,18.1013381 C32.2133467,18.7013381 32.8133467,19.0013381 33.4133467,19.0013381 L48.4133467,19.0013381 C49.9133467,19.0013381 50.5133467,21.0013381 49.3133467,21.9013381 L37.1133467,30.9013381 C36.6133467,31.3013381 36.4133467,32.0013381 36.6133467,32.6013381 L42.4133467,48.0013381 C42.8133467,49.4013381 41.3133467,50.6013381 40.1133467,49.7013381 L27.0133467,39.9013381 C26.5133467,39.5013381 25.8133467,39.5013381 25.2133467,39.9013381 L12.0133467,49.7013381 C10.8133467,50.6013381 9.21334668,49.4013381 9.71334668,48.0013381 L15.3133467,32.6013381 C15.5133467,32.0013381 15.3133467,31.3013381 14.8133467,30.9013381 L2.61334668,21.9013381 C1.41334668,21.0013381 2.11334668,19.0013381 3.51334668,19.0013381 L18.5133467,19.0013381 C19.2133467,19.0013381 19.7133467,18.8013381 19.9133467,18.1013381 L24.6133467,3.00133815 C25.0133467,1.60133815 27.0133467,1.70133815 27.4133467,3.10133815 Z M26.0133467,12.8023264 C26,14.1700393 26,33.5426636 26,34.4953918 C26.1865845,34.6476135 28.9331193,36.6890643 34.2396046,40.6197441 C34.9394191,41.144605 35.8141872,40.4447905 35.5809157,39.6283403 L35.5809157,39.6283403 L32.3085327,31.0201416 C31.9597778,30.2501831 32.3085327,29.7487793 32.7398682,29.4849854 L32.7398682,29.4849854 L39.6048489,24.6961622 C40.3046634,24.1713013 39.9547562,23.0049438 39.0799881,23.0049438 L39.0799881,23.0049438 L31.0206299,23.0049438 C30.6707226,23.0049438 29.7518921,22.8880615 29.5025635,21.9888306 L29.5025635,21.9888306 L26.8332347,13.4436151 C26.7175852,13.0388421 26.3602784,12.8204102 26.0133467,12.8023264 Z"
-                ></path>
-              </g>
-            </svg>
-            <p class="text-[#212529] text-sm">4.3(5.389 reviews)</p>
+              <img
+                id="heartIcon"
+                class="w-8"
+                src="../../assets/images/icones/heart-svgrepo-com.svg"
+                alt="fav"
+              />
+            </button>
+          </div>
+
+          <!-- sold & reviews section / static -->
+          <div id="reviewsContainer" class="flex gap-4 items-center">
+            <p
+              class="bg-[#F3F3F3] text-[#212529] rounded-xl px-3 py-1 text-center text-sm"
+            >
+              5.371 sold
+            </p>
+
+            <div class="flex items-center gap-1">
+              <svg
+                fill="#181616"
+                width="30px"
+                height="30px"
+                viewBox="-17.16 -17.16 86.32 86.32"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#181616"
+                stroke-width="0.0005200000000000001"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="#b2aeae"
+                  stroke-width="0.10400000000000001"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M27.4133467,3.10133815 L32.0133467,18.1013381 C32.2133467,18.7013381 32.8133467,19.0013381 33.4133467,19.0013381 L48.4133467,19.0013381 C49.9133467,19.0013381 50.5133467,21.0013381 49.3133467,21.9013381 L37.1133467,30.9013381 C36.6133467,31.3013381 36.4133467,32.0013381 36.6133467,32.6013381 L42.4133467,48.0013381 C42.8133467,49.4013381 41.3133467,50.6013381 40.1133467,49.7013381 L27.0133467,39.9013381 C26.5133467,39.5013381 25.8133467,39.5013381 25.2133467,39.9013381 L12.0133467,49.7013381 C10.8133467,50.6013381 9.21334668,49.4013381 9.71334668,48.0013381 L15.3133467,32.6013381 C15.5133467,32.0013381 15.3133467,31.3013381 14.8133467,30.9013381 L2.61334668,21.9013381 C1.41334668,21.0013381 2.11334668,19.0013381 3.51334668,19.0013381 L18.5133467,19.0013381 C19.2133467,19.0013381 19.7133467,18.8013381 19.9133467,18.1013381 L24.6133467,3.00133815 C25.0133467,1.60133815 27.0133467,1.70133815 27.4133467,3.10133815 Z M26.0133467,12.8023264 C26,14.1700393 26,33.5426636 26,34.4953918 C26.1865845,34.6476135 28.9331193,36.6890643 34.2396046,40.6197441 C34.9394191,41.144605 35.8141872,40.4447905 35.5809157,39.6283403 L35.5809157,39.6283403 L32.3085327,31.0201416 C31.9597778,30.2501831 32.3085327,29.7487793 32.7398682,29.4849854 L32.7398682,29.4849854 L39.6048489,24.6961622 C40.3046634,24.1713013 39.9547562,23.0049438 39.0799881,23.0049438 L39.0799881,23.0049438 L31.0206299,23.0049438 C30.6707226,23.0049438 29.7518921,22.8880615 29.5025635,21.9888306 L29.5025635,21.9888306 L26.8332347,13.4436151 C26.7175852,13.0388421 26.3602784,12.8204102 26.0133467,12.8023264 Z"
+                  ></path>
+                </g>
+              </svg>
+              <p class="text-[#212529] text-sm">4.3(5.389 reviews)</p>
+            </div>
+          </div>
+
+          <!-- gray border / static -->
+          <div id="grayBorder" class="border text-[#F3F3F3]"></div>
+        </div>
+
+        <!-- description/ static -->
+        <div id="descriptionContainer" class="flex flex-col gap-2 py-3">
+          <p class="font-semibold text-xl text-[#152536]">Description</p>
+          <p class="text-[#152536] text-base">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+            earum eveniet sunt non <span class="font-medium">view more...</span>
+          </p>
+        </div>
+
+        <!-- size & color section / dynamic -->
+        <div
+          id="sizeColorContainer"
+          class="flex justify-between items-start gap-8"
+        >
+          <!-- size container -->
+          <div
+            class="flex flex-col gap-3 overflow-x-auto whitespace-nowrap custom-scrollbar-hidden pt-4 w-[40%]"
+          >
+            <p class="font-semibold text-xl text-[#152536]">Size</p>
+            <div
+              id="sizeContainer"
+              class="flex gap-2 overflow-x-auto hide-scrollbar"
+            ></div>
+          </div>
+
+          <!-- color container -->
+          <div
+            class="flex flex-col gap-3 overflow-x-auto whitespace-nowrap custom-scrollbar-hidden pt-4 w-[40%]"
+          >
+            <p class="font-semibold text-xl text-[#152536]">Color</p>
+            <div
+              id="colorContainer"
+              class="flex items-center gap-2 overflow-x-auto hide-scrollbar"
+            ></div>
           </div>
         </div>
+
+        <!-- quantity control section / daynamic -->
+        <div id="quantityContainer" class="quantity-control flex gap-7 py-4">
+          <p class="font-semibold text-xl text-[#152536]">Quantity</p>
+          <div
+            id="quantityControl"
+            class="flex font-bold text-xl text-[#152536] bg-[#f3f3f3] rounded-3xl py-2 px-5 gap-8"
+          >
+            <button id="decreaseBtn">
+              <img
+                class="h-5"
+                src="../../assets/images/icones/dash.svg"
+                alt="minus"
+              />
+            </button>
+            <p id="quantityDisplay">0</p>
+            <button id="increaseBtn">
+              <img
+                class="h-5"
+                src="../../assets/images/icones/plus-lg.svg"
+                alt="pluse"
+              />
+            </button>
+          </div>
+        </div>
+
         <!-- gray border -->
         <div class="border text-[#F3F3F3]"></div>
-      </div>
-      <!-- discription -->
-      <div class="flex flex-col gap-2 py-3">
-        <p class="font-semibold text-xl text-[#152536]">Description</p>
-        <p class="text-[#152536] text-base">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
-          earum eveniet sunt non <span class="font-medium">view more...</span>
-        </p>
-      </div>
-      <!-- chosing size & color  -->
-      <div class="flex justify-between items-start gap-8">
-        <!-- size select section -->
-        <div class="flex flex-col gap-3">
-          <p class="font-semibold text-xl text-[#152536]">Size</p>
-          <div class="flex gap-2 overflow-x-auto hide-scrollbar max-w-24">
-            <button
-              class="w-11 h-11 text-lg border rounded-full border-[#717171]"
-            >
-              40
-            </button>
-            <button
-              class="w-11 h-11 text-lg border rounded-full border-[#717171]"
-            >
-              41
-            </button>
-            <button
-              class="w-11 h-11 text-lg border rounded-full border-[#717171]"
-            >
-              41
-            </button>
-            <button
-              class="w-11 h-11 text-lg border rounded-full border-[#717171]"
-            >
-              41
-            </button>
-            <button
-              class="w-11 h-11 text-lg border rounded-full border-[#717171]"
-            >
-              42
-            </button>
-          </div>
-        </div>
 
-        <!-- color select section -->
-        <div class="flex flex-col gap-3">
-          <p class="font-semibold text-xl text-[#152536]">Color</p>
-          <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar">
-            <button
-              class="w-11 h-11 rounded-full bg-slate-600 items-center justify-center relative"
-            ></button>
-            <button
-              class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center relative"
-            ></button>
-            <button
-              class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center relative"
-            ></button>
-          </div>
-        </div>
-      </div>
-      <!-- quantity -->
-      <div class="flex gap-7 py-4">
-        <p class="font-semibold text-xl text-[#152536]">Quantity</p>
+        <!-- total price & add button section -->
         <div
-          class="flex font-bold text-xl text-[#152536] bg-[#f3f3f3] rounded-3xl py-2 px-5 gap-8"
+          id="footerProductPage"
+          class="flex justify-between pt-5 pb-7 items-center"
         >
-          <button>
-            <img
-              class="h-5"
-              src="../../assets/images/icones/dash.svg"
-              alt="minus"
-            />
-          </button>
-          <p>2</p>
-          <button>
-            <img
-              class="h-5"
-              src="../../assets/images/icones/plus-lg.svg"
-              alt="pluse"
-            />
-          </button>
-        </div>
-      </div>
-      <!-- gray-border -->
-      <div class="border text-[#F3F3F3]"></div>
-      <!-- total price -->
-      <div class="flex justify-between pt-5 pb-7 items-center">
-        <div>
-          <p class="text-sm font-semibold text-gray-400">Total price</p>
-          <p class="text-2xl font-bold">
-            <span>$</span>
-            240.00
-          </p>
-        </div>
+          <!-- total price  -->
+          <div id="totalPriceContainer">
+            <p class="text-sm font-semibold text-gray-400">Total price</p>
+            <p class="text-2xl font-bold">
+              <span>$</span>
+              <span id="totalPriceDisplay">0</span>
+            </p>
+          </div>
 
-        <button
-          class="flex items-center justify-center bg-black text-white py-4 rounded-full w-2/3 gap-2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            class="bi bi-bag-fill mr-3"
-            viewBox="0 0 16 16"
+          <!-- add product button section -->
+          <button
+            id="addProduct"
+            class="flex items-center justify-center bg-black text-white py-4 rounded-full w-2/3 gap-2"
           >
-            <path
-              d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
-            />
-          </svg>
-          <span class="text-lg font-medium">Add to Cart</span>
-        </button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-bag-fill mr-3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+              />
+            </svg>
+            <span class="text-lg font-medium">Add to Cart</span>
+          </button>
+        </div>
       </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script src="product.js"></script>
+    <script src="product.js" type="module"></script>
   </body>
 </html>
